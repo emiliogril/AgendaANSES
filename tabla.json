@@ -1,0 +1,334 @@
+[
+    {
+        "_ACCES": "CURSO ACCES I",
+
+        "acces_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "acces_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+
+        "_ADMINISTRACION": "CURSO ESPECIALIZADA",
+
+        "administracion_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "administracion_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_ADMINISTRACION DEL TIEMPO": "CURSO GESTION",
+
+        "tiempo_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "tiempo_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_ATENCION AL PUBLICO COVID": "CURSO HABILIDADES",
+
+        "atencion_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "atencion_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_CELIAQUIA": "CURSO BIENESTAR",
+
+        "celiaquia_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "celiaquia_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_COMPUTOS": "CURSO PRESTACIONAL",
+
+        "computos_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "computos_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_CONVENIOS INTERNACIONALES": "CURSO PRESTACIONAL",
+
+        "convenios_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "convenios_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_DIALOGOS CONTRUCTIVOS PARA UN MEJOR DESARROLLO LABORAL": "CURSO HABILIDADES",
+
+        "dialogos_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "dialogos_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_ECONOMICA DOMESTICA Y HABITOS DE CONSUMO": "CURSO BIENESTAR",
+
+        "economica_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "economica_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_ESTADOS, POLITICAS PUBLICAS Y SEGURIDAD SOCIAL": "CURSO GESTION",
+
+        "estado_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "estado_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_ESTRATEGIAS PARA ALCANZAR CONSENSOS": "CURSO HABILIDADES",
+
+        "estrategias_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "estrategias_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_EXCEL I": "CURSO HERRAMIENTAS",
+
+        "excelI_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "excelI_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_EXCEL II": "CURSO HERRAMIENTAS",
+
+        "excelII_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "excelII_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_EXCEL III": "CURSO HERRAMIENTAS",
+
+        "excelIII_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "excelIII_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_FAKE NEWS EN LA ERA DE LA SOBREINFORMACION": "CURSO GESTION",
+
+        "fake_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "fake_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_FORMACION EN PERSPECTIVA DE GENERO EN LA SEGURIDAD SOCIAL": "CURSO GESTION",
+
+        "formacion_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "formacion_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_GDE-CCOO": "CURSO HERRAMIENTAS",
+
+        "gdeccoo_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "gdeccoo_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_GDE-EE": "CURSO HERRAMIENTAS",
+
+        "gdeee_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "gdeee_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_GDE-EU": "CURSO HERRAMIENTAS",
+
+        "gdeeu_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "gdeeu_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_GDE-GEDO": "CURSO HERRAMIENTAS",
+
+        "gdegedo_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "gdegedo_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_HERRAMIENTA CLEARQUEST WEB": "CURSO HERRAMIENTAS",
+
+        "herramientaclear_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "herramientaclear_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_HERRAMIENTA DE GESTION ORGANIZACIONAL CON ENFOQUES EN POLITICA PUBLICAS": "CURSO GESTION",
+
+        "herramientaPolitica_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "herramientaPolitica_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_IDENTIFICACION DE LAS PERSONAS": "CURSO PRESTACIONAL",
+
+        "identificacion_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "identificacion_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_INCLUIR: PROGRAMA DE EDUCACION BANCARIA Y FINANCIERA": "CURSO GESTION",
+
+        "incluir_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "incluir_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_INICIO DE TRAMITES PREVISIONALES": "CURSO PRESTACIONAL",
+
+        "inicio_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "inicio_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_LIDERAZCO CENTRADO EN EL EQUIPO": "CURSO HABILIDADES",
+
+        "liderazcoEquipo_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "liderazcoEquipo_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_LIDERAZCO CENTRADO EN LA PERSONA": "CURSO HABILIDADES",
+
+        "liderazcoPersona_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "liderazcoPersona_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_LIQUIDACION DE TRAMITES PREVISIONALES": "CURSO PRESTACIONAL",
+
+        "liquidacion_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "liquidacion_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_MONOTRIBUTO SOCIAL": "CURSO PRESTACIONAL",
+
+        "monotributo_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "monotributo_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_OBRAS SOCIALES - ACTIVOS": "CURSO PRESTACIONAL",
+
+        "obrasActivos_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "obrasActivos_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_OBRAS SOCIALES - BENEFICIARIOS": "CURSO PRESTACIONAL",
+
+        "beneficiarios_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "beneficiarios_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_OPERADOR INTEGRAL": "CURSO PRESTACIONAL",
+
+        "integral_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "integral_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_OUTLOOK": "CURSO HERRAMIENTAS",
+
+        "outlook_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "outlook_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PAUSA ACTIVA": "CURSO BIENESTAR",
+
+        "pausa_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "pausa_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PAUSA ACTIVA EN REMOTO": "CURSO BIENESTAR",
+
+        "pausaEnremoto_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "pausaEnremoto_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PENSIONES NO CONTRIBUTIVAS": "CURSO PRESTACIONAL",
+
+        "pensiones_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "pensiones_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PLATAFORMA DE CAPACITACION": "CURSO GESTION",
+
+        "plataforma_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "plataforma_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_POWER POINT": "CURSO HERRAMIENTAS",
+
+        "powerpoint_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "powerpoint_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PRESTACIONES Y SERVICIOS DE ANSES": "CURSO PRESTACIONAL",
+
+        "prestaciones_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "prestaciones_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PREVENCION DE ADICCIONES Y CONSUMO PROBLEMATICO EN EL AMBITO LABORAL": "CURSO BIENESTAR",
+
+        "prevencion_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "prevencion_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PREVENCION DE CONSUMO PROBLEMATICOS: ABORDAJE ESPECIFICO EN MUJERES": "CURSO BIENESTAR",
+
+        "prevencionProblematicos_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "prevencionProblematicos_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PREVENCION DE CONSUMO PROBLEMATICOS: FAMILIA COMO AGENTE PREVENTOR": "CURSO BIENESTAR",
+
+        "prevencionfamilia_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "prevencionfamilia_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PREVENCION DE RIESGO LABORALES PARA PERSONAL ADMINISTRATIVC": "CURSO BIENESTAR",
+
+        "prevencionRiesgo_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "prevencionRiesgo_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PREVENCION Y TELETRABAJO": "CURSO BIENESTAR",
+
+        "prevencionTeletrabajo_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "prevencionTeletrabajo_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PRIMERO AUXILIOS": "CURSO BIENESTAR",
+
+        "auxilios_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "auxilios_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PROTECCION CONTRA INCENDIO Y EVACUACION": "CURSO BIENESTAR",
+
+        "protecion_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "protecion_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PROTOCOLO COVID-19": "CURSO GESTION",
+
+        "covid_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "covid_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_PUEBLOS INDIGENAS Y LOS DERECHOS": "CURSO ESPECIALIZADAD",
+
+        "prueblos_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "prueblos_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_REGISTRO DE SERVICIOS PUBLICOS": "CURSO BIENESTAR",
+
+        "registro_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "registro_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_RESILIENCIA EN TIEMPO DE PANDEMIA": "CURSO GESTION",
+
+        "resiliencia_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "resiliencia_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SEGURIDAD DE LA INFORMACION - LA EVOLUCION TECNOLOGICA NOS INTEGRA A SU RITMO": "CURSO GESTION",
+
+        "seguridad_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "seguridad_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SEGURIDAD DE LA INFORMACION - NOCIONES BASICAS": "CURSO GESTION",
+
+        "seguridadBasicas_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "seguridadBasicas_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SEGURIDAD DE LA INFORMACION - PROTECCION DE DATOS PERSONALES Y BUENAS PRACTICAS": "CURSO GESTION",
+
+        "seguridadDatos_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "seguridadDatos_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SIEEL - (SISTEMA DE EXPEDIENTES ELECTRONICOS) - ATENCION VIRTUAL": "CURSO HERRAMIENTAS",
+
+        "sieelVirtual_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "sieelVirtual_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SIEEL - (SISTEMA DE EXPEDIENTES ELECTRONICOS) - GESTION DE EXPEDIENTES": "CURSO HERRAMIENTAS",
+
+        "sieelExpedientes_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "sieelExpedientes_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SIEEL - (SISTEMA DE EXPEDIENTES ELECTRONICOS) - REMITOS": "CURSO HERRAMIENTAS",
+
+        "sieelRemitos_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "sieelRemitos_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SIEEL ATENCION VIRTUAL - OPERADORES UDAI": "CURSO HERRAMIENTAS",
+
+        "sieelUdai_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "sieelUdai_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SISTEMA DE CONSULTA DE LA DIRECCION DE MIGRACIONES - SITUACION MIGRATORIA": "CURSO PRESTACIONAL",
+
+        "sistema_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "sistema_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SISTEMA DE CONTROL INTERNO": "CURSO ESPECIALIZADA",
+
+        "sistemaInterno_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "sistemaInterno_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_SISTEMA DE GESTION DE CONSULTA - APLICATIVO CRM": "CURSO HERRAMIENTAS",
+
+        "sistemaCrm_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "sistemaCrm_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_TAE (TERMINALES DE AUTOCONSULTA ELECTRONICA) - INCORPORACION DE ACCESO CON HUELLAS": "CURSO PRESTACIONAL",
+
+        "tae_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "tae_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_TAREAS DE CUIDADO - REVISION DE CONCEPTOS TECNICOS": "CURSO PRESTACIONAL",
+
+        "tareas_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "tareas_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_TOMAS DE DECISIONES": "CURSO ESPECIALIZADA",
+
+        "tomas_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "tomas_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_TRABAJO EN EQUIPO": "CURSO GESTION",
+
+        "trabajo_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "trabajo_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_VEJECES ACTIVAS. UNA MIRADA CONSTRUCTIVAS SOBRE EL ENVECIMIENTO": "CURSO BIENESTAR",
+
+        "vejeces_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "vejeces_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021",
+
+        "_WORD": "CURSO HERRAMIENTAS",
+
+        "word_inicio": "Del 12/10 al 15/10/2021 <br> Del 14/10 al 15/10/2021",
+        "word_inscripcion": "Del 01/10 al 09/10/2021 <br> Del 04/10 al 012/10/2021"
+    }
+]

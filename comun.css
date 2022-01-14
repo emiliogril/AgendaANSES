@@ -1,0 +1,168 @@
+
+
+/*(Lemon) Pie*/
+.lemonPieBase {
+	width: 100%;
+	background-color: #00A6E4;
+	margin-top: 50px;
+	display:block;
+	overflow:auto;
+	height: 100%;
+}
+
+.lemonPie {
+	max-width: 1200px;
+	min-height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 30px;
+    color: #fff;
+}
+
+.columna {
+	float: left;
+}
+
+.contactoBase {
+	display: flex;
+    justify-content: center;
+}
+
+.espacioBalcarceBase {
+	display: flex;
+    justify-content: center;
+}
+
+.bibliotecaBase {
+	display: flex;
+    justify-content: center;
+}
+
+.pieTitulo {	
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: left;
+}
+
+.pieTexto {	
+	text-align: left;
+	padding-top: 15px;
+    color: #fff!important;
+	text-decoration: none!important;
+}
+
+.pietexto a {
+    color: #fff!important;
+	text-decoration: none!important;
+}
+
+/*botón ir arriba*/
+#arriba {
+	width:40px;
+	height:40px;
+	display: none;
+	position: fixed;
+	bottom: 200px;
+	right: 10px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color:#646464;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+#arriba:hover {
+	background-color: #00AEEA;
+}
+
+
+@media  (max-width:1200px){
+	
+	.cabezalFijo {
+		padding: 0px 10px;
+	}
+}
+
+
+@media  (max-width: 974px){
+
+	/*.cabezalFijo {
+		padding: 0px 10px;
+	}*/
+
+	.fondoCabezal {
+		height: 300px;
+	}
+
+	.contenido {
+	/*	padding: 0px 10px;*/
+	}
+
+	.contenidoCabezal{
+		margin: 0px 10px;
+		font-size: 2em;
+		line-height: 1em;
+	}
+	
+}
+
+
+@media (max-width: 750px) {
+	.fondoCabezal {
+		height: 300px;
+	}
+
+	.contenidoCabezalBase {
+		width: 100%;
+	}
+
+	.contenidoCabezal{
+		left: 0px;
+		margin: 0px 10px;
+		font-size: 1.3em;
+		line-height: 1em;
+	}
+
+	.pieContenido {
+		text-align: center;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #fff;
+	}
+
+	.pieTexto {
+		text-align: center;
+	}
+
+	.bibliotecaBase {
+		padding-bottom: 50px;
+	}
+}
+
+@media  (max-width: 479px) {
+
+	.logoPaginaImg {
+		width: 100px;
+	}
+
+	.logoPaginaLink {
+		font-size: 0.9em;
+	}
+
+	.fondoCabezal {
+		height: 150px;
+	}
+
+	.contenidoCabezalBase {
+		width: 100%;
+	}
+
+	.contenidoCabezal{
+		left: 0px;
+		margin: 0px 10px;
+		font-size: 1em;
+		line-height: 1em;
+	}
+}

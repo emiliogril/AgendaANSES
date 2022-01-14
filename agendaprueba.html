@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Agenda</title>
+	<link rel="stylesheet" type="text/css" href="agenda.css" />
+	<link rel="stylesheet" type="text/css" href="comun.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+</head>
+<html>
+<body>
+
+
+
+
+
+
+	<!--header Campus--->
+	<div id="cabezalBase">
+		<div class="cabezalFijo">
+			<div class="campusVirtualAnses">
+				<a class="logoPaginaLink" href="https://cva.anses.gob.ar/" target="_self"> <img class="logoPaginaImg" src="logo blanco 2020-01.png">Campus Virtual
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- cabezal -->
+	<!-- fondo cabezal -->
+	<div id="fondoCabezalAgenda" class="fondoCabezal">
+
+		<!-- Container cabezal -->
+		<div class="contenidoCabezalBase">
+			<div class="contenidoCabezal">
+				Agenda de<br>Actividades
+			</div>
+		</div>
+	</div>
+	<!-- FIN cabezal -->
+
+	<!-- contenido --> 
+	<div class="contenidoBase">
+		<div class="contenido">
+
+			<!-- Buscador -->
+			<div class="buscador"><img class="lupaImg" src="lupa.svg"><input id="buscador" type="text" value="" onkeyup="buscar()" placeholder="buscar por nombre (en minúsculas)" title="Escribir nombre del curso">
+			</div>
+
+
+			
+			<section class="productos" id="Productos">
+				<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="container justify-content-center">
+						  <h3 class="TituloPrincipal">Productos</h3>
+						  <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-3 h-100" id="contenedorProductos">
+						  </div>
+					  </div>
+			  </section>
+				
+				<!-- CARGAR LAS BASES DE DATOS JSON-->
+
+
+     <!--Custom JS-->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="tabla.js"></script>
+
+</body>
+</html>

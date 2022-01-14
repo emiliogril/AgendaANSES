@@ -1,0 +1,2492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="agenda.css" />
+	<link rel="stylesheet" type="text/css" href="comun.css" />
+
+    <title>Agenda Tabla</title>
+</head>
+<body>
+
+    <!--header Campus--->
+	<div id="cabezalBase">
+		<div class="cabezalFijo">
+			<div class="campusVirtualAnses">
+				<a class="logoPaginaLink" href="https://cva.anses.gob.ar/" target="_self"> <img class="logoPaginaImg" src="logo blanco 2020-01.png">Campus Virtual
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+    <!-- fondo cabezal -->
+	<div id="fondoCabezalAgenda" class="fondoCabezal">
+
+	<!-- Container cabezal -->
+	<div class="contenidoCabezalBase">
+		<div class="contenidoCabezal">Agenda de<br>Actividades</div>
+	</div>
+	</div>
+	<!-- FIN cabezal -->
+
+    <!-- contenido --> 
+	<div class="contenidoBase">
+		<div class="contenido">
+
+	<!-- Buscador -->
+	<div class="buscador"><img class="lupaImg" src="lupa.svg"><input id="buscador" type="text" value="" onkeyup="buscar()" placeholder="buscar por nombre (en minúsculas)" title="Escribir nombre del curso">
+			</div>
+
+    <!-- Curso ACCES I "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+                <div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">Access I -&nbsp;
+						<span class="modalidad">A distancia / Grupo Cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+			<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha"></div>
+					<div class="cursoNombre">Access I -&nbsp;
+						<span class="modalidad">A distancia / Grupo Cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+                    <!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-acces"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+	<!-- Curso ADMINISTRACION "ESPECIALIZADA" -->
+			<div class="cursoAgendaBase cursoAgendaBordeEspecializada"> 
+
+			<div class="cursoAgendaCabezal abierto cursoAgendaCabezalEspecializada">
+			<div class="cursoFlecha cursoFlechaEspecializada">
+			</div>
+			<div class="cursoNombre">Administración -&nbsp;
+			<span class="modalidad">A distancia </span>
+		</div>
+		<div class="mas">
+			<span class="boton-mas boton-masEspecializada" href="#">+</span>
+		</div>
+	</div>
+
+	<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalEspecializada">
+		<div class="cursoFlecha cursoFlechaEspecializada">
+		</div>
+		<div class="cursoNombre">Administración -&nbsp;
+			<span class="modalidad">A distancia </span>
+		</div>
+		<div class="menos">
+			<span class="boton-menos boton-menosEspecializada" href="#">-
+			</span>
+		</div>
+	</div>
+
+	<div class="fechaBase">
+		
+		 <div class="row" id="lista-administracion"></div>
+
+		
+		 <div class="linkFicha">
+			 <img class="archivoImg" src="archivo.svg">
+		 </div>
+	</div>
+			</div>
+	<!-- Curso ADMINISTRACION DEL TIEMPO "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion"></div>
+					<div class="cursoNombre">Administración del tiempo -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Administración del tiempo  -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-tiempo"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Atención al público, estrategias claves y recomendaciónes en tiempos de COVID-19 "HABILIDADES" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHabilidades">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">
+						Atención al público, estrategias claves y recomendaciónes en tiempos de COVID-19-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHabilidades" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">
+						Atención al público, estrategias claves y recomendaciónes en tiempos de COVID-19-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHabilidades" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-atencion"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Celiaquía  – Mitos y verdades "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">
+						Celiaquía  – Mitos y verdades -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">
+						Celiaquía  – Mitos y verdades -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-celiaquia"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Cómputos "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Cómputos-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Cómputos-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-computos"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Convenios Internacionales "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">
+						Convenios Internacionales-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Convenios Internacionales-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-convenios"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Diálogos constructivos para un mejor desarrollo laboral "HABILIDADES -->
+			<div class="cursoAgendaBase cursoAgendaBordeHabilidades">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">Diálogos constructivos para un mejor desarrollo laboral-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHabilidades" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">Diálogos constructivos para un mejor desarrollo laboral-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHabilidades" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-dialogos"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+ 	<!-- Curso Economía doméstica y hábitos de consumo "BIENESTAR" -->
+			 <div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">
+						Economía doméstica y hábitos de consumo-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Economía doméstica y hábitos de consumo-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-economica"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Estado, politicas públicas y Seguridad Social "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Estado, politicas públicas y Seguridad Social -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Estado, politicas públicas y Seguridad Social -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-estado"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Estrategias para alcanzar consensos HABILIDADES -->
+			<div class="cursoAgendaBase cursoAgendaBordeHabilidades">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">Estrategias para alcanzar consensos-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHabilidades" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">Estrategias para alcanzar consensos-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHabilidades" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-estrategias"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Excel I: Fundamentos, elementos y gestión "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">Excel I: Fundamentos, elementos y gestión-&nbsp;
+						<span class="modalidad">A distancia / Grupo Cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+			<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">Excel I: Fundamentos, elementos y gestión-&nbsp;
+						<span class="modalidad">A distancia / Grupo Cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-excelI"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Excel II: Fórmulas, funciones principales y gráficos "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">Excel II: Fórmulas, funciones principales y gráficos-&nbsp;
+						<span class="modalidad">A distancia / Grupo Cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+
+        				</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">Excel II: Fórmulas, funciones principales y gráficos-&nbsp;
+						<span class="modalidad">A distancia / Grupo Cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-excelII"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Excel III: Funciones avanzadas y tablas dinámicas "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">Excel III: Funciones avanzadas y tablas dinámicas-&nbsp;
+						<span class="modalidad">A distancia / Grupo Cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">Excel III: Funciones avanzadas y tablas dinámicas-&nbsp;
+						<span class="modalidad">A distancia / Grupo Cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-excelIII"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso Fake News en la era de la sobreinformación "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Fake News en la era de la sobreinformación-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Fake News en la era de la sobreinformación -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-fake"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+					
+	<!-- Curso Formación en perspectiva de género en la Seguridad Social "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Formación en perspectiva de género en la Seguridad Social -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Formación en perspectiva de género en la Seguridad Social-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-formacion"></div>
+
+					<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+					</div>
+					</div>
+
+	<!-- Curso GDE-CCOO "HERRAMIENTAS" -->
+	<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+		<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+			<div class="cursoFlecha cursoFlechaHerramientas">
+			</div>
+			<div class="cursoNombre">GDE-CCOO -&nbsp;
+				<span class="modalidad">A distancia </span>
+			</div>
+			<div class="mas">
+				<span class="boton-mas boton-masHerramientas" href="#">+</span>
+			</div>
+		</div>
+
+		<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+			<div class="cursoFlecha">
+			</div>
+			<div class="cursoNombre">GDE-CCOO -&nbsp;
+				<span class="modalidad">A distancia </span>
+			</div>
+			<div class="menos">
+				<span class="boton-menos boton-menosHerramientas" href="#">-
+				</span>
+			</div>
+		</div>
+
+		<div class="fechaBase">
+			<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-gde-ccoo"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso GDE-EE "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">GDE-EE-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+
+        				</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">GDE-EE-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-gdeee"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso GDE-EU "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">GDE-EU -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">GDE-EU-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-gdeeu"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso GDE-GEDO "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">GDE-GEDO  -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+
+        				</span>
+					</div>
+				</div>
+
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">GDE-GEDO -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-gdegedo"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+
+	<!-- Curso Herramienta ClearQuest Web "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">Herramienta ClearQuest Web-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+
+        				</span>
+					</div>
+				</div>
+			<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">Herramienta ClearQuest Web -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-herramientaclear"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+
+	<!-- Curso Herramientas de gestión organizacional con enfoques en Politicas Públicas "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Herramientas de gestión organizacional con enfoques en Politicas Públicas -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Herramientas de gestión organizacional con enfoques en Politicas Públicas -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-herramientaPolitica"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Identificación de las Personas – Toma de trámites y atención al ciudadano "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Identificación de las Personas – Toma de trámites y atención al ciudadano-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Identificación de las Personas – Toma de trámites y atención al ciudadano-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-identificacion"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Incluir: Programa de Educación Bancaria y Financiera "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Incluir: Programa de Educación Bancaria y Financiera -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Incluir: Programa de Educación Bancaria y Financiera -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-incluir"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Inicio de Trámites Previsionales "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Inicio de Trámites Previsionales-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Inicio de Trámites Previsionales-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-inicio"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Liderazgo centrado en el equipo "HABILIDADES" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHabilidades">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">Liderazgo centrado en el equipo -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHabilidades" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">Liderazgo centrado en el equipo-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHabilidades" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-liderazcoEquipo"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Liderazgo centrado en la persona "HABILIDADES" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHabilidades">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">Liderazgo centrado en la persona-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHabilidades" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHabilidades">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">Liderazgo centrado en la persona -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHabilidades" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-liderazcoPersona"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Liquidación de Trámites Previsionales "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Liquidación de Trámites Previsionales-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Liquidación de Trámites Previsionales-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-liquidacion"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Monotributo Social "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Monotributo Social-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Monotributo Social-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-monotributo"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Obras Sociales - Activos "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Obras Sociales - Activos-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Obras Sociales - Activos-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-obrasActivos"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Obras Sociales - Beneficiarios "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Obras Sociales - Beneficiarios -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Obras Sociales - Beneficiarios -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-beneficiarios"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Operador Integral - Beneficiarios "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Operador Integral - Beneficiarios -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Operador Integral - Beneficiarios  -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-integral"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Outlook "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">Outlook-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">Outlook-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-outlook"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Pausa activa "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Pausa activa-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Pausa activa-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-pausa"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Pausa activa durante el trabajo remoto "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Pausa activa durante el trabajo remoto-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Pausa activa durante el trabajo remoto-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-pausaEnremoto"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Pensiones No Contributivas por Invalidez "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Pensiones No Contributivas por Invalidez-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Pensiones No Contributivas por Invalidez-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">
+        					-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-pensiones"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Plataforma de capacitación de ANSES: presentación y herramientas para su uso "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Plataforma de capacitación de ANSES: presentación y herramientas para su uso-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Plataforma de capacitación de ANSES: presentación y herramientas para su uso -&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-plataforma"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Power Point "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">Power Point -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">Power Point-&nbsp;
+						<span class="modalidad">A distancia</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-powerpoint"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Prestaciones y Servicios de ANSES – Áreas Centrales "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Prestaciones y Servicios de ANSES – Áreas Centrales-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Prestaciones y Servicios de ANSES – Áreas Centrales-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-prestaciones"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Prevención de adicciones y consumo problemático en el ámbito laboral "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención de adicciones y consumo problemático en el ámbito laboral-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención de adicciones y consumo problemático en el ámbito laboral-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-prevencion"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Prevención de consumos problemáticos: Abordaje específico en mujeres "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención de consumos problemáticos: Abordaje específico en mujeres-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención de consumos problemáticos: Abordaje específico en mujeres-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-prevencionProblematicos"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Prevención de consumos problemáticos: Familia como agente preventor "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención de consumos problemáticos: Familia como agente preventor-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención de consumos problemáticos: Familia como agente preventor-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-prevencionfamilia"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Prevención de riesgos laborales para personal administrativo "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención de riesgos laborales para personal administrativo -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención de riesgos laborales para personal administrativo -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-prevencionRiesgo"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Prevención y teletrabajo "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención y teletrabajo-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Prevención y teletrabajo -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">
+        					-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-prevencionTeletrabajo"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Primeros auxilios "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Primeros auxilios-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Primeros auxilios-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-auxilios"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Protección contra incendios y evacuación – Marco normativo "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Protección contra incendios y evacuación – Marco normativo-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Protección contra incendios y evacuación – Marco normativo -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-protecion"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Protocolo COVID - 19 "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Protocolo COVID - 19-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Protocolo COVID - 19-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-covid"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Pueblos indígenas y los derechos de la Seguridad Social. Aportes para la incorporación del enfoque intercultural y la identidad étnica "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Pueblos indígenas y los derechos de la Seguridad Social. Aportes para la incorporación del enfoque intercultural y la identidad étnica-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Pueblos indígenas y los derechos de la Seguridad Social. Aportes para la incorporación del enfoque intercultural y la identidad étnica -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-prueblos"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Registro de servicios públicos "ESPECIALIZADA" -->
+			<div class="cursoAgendaBase cursoAgendaBordeEspecializada">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalEspecializada">
+					<div class="cursoFlecha cursoFlechaEspecializada">
+					</div>
+					<div class="cursoNombre">Registro de servicios públicos-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masEspecializada" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalEspecializada">
+					<div class="cursoFlecha cursoFlechaEspecializada">
+					</div>
+					<div class="cursoNombre">Registro de servicios públicos-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosEspecializada" href="#">-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-registro"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Resiliencia en tiempos de Pandemia "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Resiliencia en tiempos de Pandemia -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+
+        				</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Resiliencia en tiempos de Pandemia-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-
+        				</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-resiliencia"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Seguridad de la información – La evolución  tecnológica nos integra a su ritmo "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Seguridad de la información – La evolución  tecnológica nos integra a su ritmo-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Seguridad de la información – La evolución  tecnológica nos integra a su ritmo-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-seguridad"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Seguridad de la información - Nociones básicas "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Seguridad de la información - Nociones básicas  -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Seguridad de la información - Nociones básicas -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-seguridadBasicas"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Seguridad de la información - Protección de datos personales y buenas prácticas "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Seguridad de la información - Protección de datos personales y buenas prácticas-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Seguridad de la información - Protección de datos personales y buenas prácticas-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-seguridadDatos"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso SIEEL - (Sistema de Expedientes Electrónicos) - Atención Virtual "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">SIEEL - (Sistema de Expedientes Electrónicos) - Atención Virtual-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">SIEEL - (Sistema de Expedientes Electrónicos) - Atención Virtual-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-sieelVirtual"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso SIEEL (Sistema de Expedientes Electrónicos) – Gestión de expedientes "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">SIEEL (Sistema de Expedientes Electrónicos) – Gestión de expedientes -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">SIEEL (Sistema de Expedientes Electrónicos) – Gestión de expedientes -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-sieelExpedientes"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso SIEEL (Sistema de Expedientes Electrónicos) - Remitos "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">SIEEL (Sistema de Expedientes Electrónicos) - Remitos-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">SIEEL (Sistema de Expedientes Electrónicos) - Remitos-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-sieelRemitos"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso SIEEL Atención Virtual – Operadores de UDAI "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">SIEEL Atención Virtual – Operadores de UDAI-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">SIEEL Atención Virtual – Operadores de UDAI-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-sieelUdai"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Sistema de Consulta de la Dirección Nacional de Migraciones – Situación Migratoria "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Sistema de Consulta de la Dirección Nacional de Migraciones – Situación Migratoria-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Sistema de Consulta de la Dirección Nacional de Migraciones – Situación Migratoria-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-sistema"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Sistema de Control Interno. Parte I "ESPECIALIZADA" -->
+			<div class="cursoAgendaBase cursoAgendaBordeEspecializada">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalEspecializada">
+					<div class="cursoFlecha cursoFlechaEspecializada">
+					</div>
+					<div class="cursoNombre">Sistema de Control Interno. Parte I-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masEspecializada" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalEspecializada">
+					<div class="cursoFlecha cursoFlechaEspecializada">
+					</div>
+					<div class="cursoNombre">Sistema de Control Interno. Parte I-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosEspecializada" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-sistemaInterno"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Sistema de gestión de consulta - Aplicativo CRM - Nociones básicas "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">Sistema de gestión de consulta - Aplicativo CRM - Nociones básicas-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">Sistema de gestión de consulta - Aplicativo CRM - Nociones básicas-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-sistemaCrm"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso TAE (Terminales de Autoconsulta Electrónica) -Incorporación de acceso con Huellas "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">TAE (Terminales de Autoconsulta Electrónica) -Incorporación de acceso con Huellas-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">TAE (Terminales de Autoconsulta Electrónica) -Incorporación de acceso con Huellas-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-tae"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Tareas de cuidado - Revisión de conceptos técnicos "PRESTACIONAL" -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Tareas de cuidado - Revisión de conceptos técnicos-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masPrestacional" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre">Tareas de cuidado - Revisión de conceptos técnicos-&nbsp;
+						<span class="modalidad">A distancia / Grupo cerrado</span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosPrestacional" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-tareas"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Toma de Decisiones "ESPECIALIZADA" -->
+			<div class="cursoAgendaBase cursoAgendaBordeEspecializada">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalEspecializada">
+					<div class="cursoFlecha cursoFlechaEspecializada">
+					</div>
+					<div class="cursoNombre">Toma de Decisiones-&nbsp;
+						<span class="modalidad">A distancia</span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masEspecializada" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalEspecializada">
+					<div class="cursoFlecha cursoFlechaEspecializada">
+					</div>
+					<div class="cursoNombre">Toma de Decisiones-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosEspecializada" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-tomas"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Trabajo en equipo "GESTION" -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Trabajo en equipo-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masGestion" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">Trabajo en equipo-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosGestion" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-trabajo"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Vejeces activas. Una mirada constructiva sobre el envejecimiento "BIENESTAR" -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezaBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Vejeces activas. Una mirada constructiva sobre el envejecimiento-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masBienestar" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">Vejeces activas. Una mirada constructiva sobre el envejecimiento -&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosBienestar" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-vejeces"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+	<!-- Curso Word I "HERRAMIENTAS" -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+
+				<div class="cursoAgendaCabezal abierto cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">Word I-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="mas">
+						<span class="boton-mas boton-masHerramientas" href="#">+</span>
+					</div>
+				</div>
+
+				<div class="cursoAgendaCabezal cerrado cursoAgendaCabezalHerramientas" >
+					<div class="cursoFlecha">
+					</div>
+					<div class="cursoNombre">Word I-&nbsp;
+						<span class="modalidad">A distancia </span>
+					</div>
+					<div class="menos">
+						<span class="boton-menos boton-menosHerramientas" href="#">-</span>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<!-- CARGAR LOS DATOS JSON -->
+			<div class="row" id="lista-word"></div>
+
+			<!-- CAMBIAR LOS LINKS DE LAS FICHAS -->
+			<div class="linkFicha">
+				<img class="archivoImg" src="archivo.svg">
+			</div>
+			</div>
+			</div>
+
+                </div></div></div></div></div></div></div></div></div></div>
+
+    <!-- boton volver arriba-->
+    <button onclick="topFunction()" id="arriba" title="Ir arriba"><img src="arriba.png" width="20" height="18"></button>
+
+    <!-- (lemon)pie -->
+        <div class="lemonPieBase container-fluid">
+	        <div class="lemonPie">
+		        <div class="contactoBase columna col-sm-12 col-md-4">
+			        <div class="contacto pieContenido">
+				    <span class="pieTitulo">Contacto</span>
+				    <p class="pieTexto">
+					<a class="pieTexto" href="mailto:DCAP@anses.gov.ar">
+					DCAP@anses.gov.ar</a><br>
+					Chacabuco 467/479, 9° Piso,<br>
+					Contrafrente, CPA C1069AAI, CABA.<br>
+				</p>
+			</div>
+		</div>
+		<div class="espacioBalcarceBase columna col-sm-12 col-md-4">
+			<div class="espacioBalcarce pieContenido">
+					<span class="pieTitulo">Espacio Balcarce</span>
+				<p class="pieTexto">Balcarce 627, CABA</p>
+			</div>
+		</div>
+		<div class="bibliotecaBase columna col-sm-12 col-md-4">
+			<div class="biblioteca pieContenido">
+				<span class="pieTitulo">Biblioteca</span>
+				<p class="pieTexto">Balcarce 610, 2° piso, CABA</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+    <!-- SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="agenda.js"></script>
+    <script type="text/javascript" src="tabla.js"></script>
+
+</body>
+</html>

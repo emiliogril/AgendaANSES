@@ -1,0 +1,504 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: 'Encode', sans-serif;
+	font-size: 1em;
+	background: #F1F3F4!important;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+.row {
+margin-left: 0px!important;
+margin-right: 0px!important;
+}
+
+/* cabezal campus */
+
+#cabezalBase {
+	width: 100%;
+	height: 60px;
+	font-size: 15px;
+	background-color:#015294;
+}
+
+.cabezalFijo {
+	max-width: 1200px;
+	height: 60px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+}
+
+.campusVirtualAnses {
+	text-align:left;
+	font-weight: bold;
+	font-size: 1.2em;
+	width:80%;
+	display: flex;
+	align-items: center;
+	color:#fff!important;"
+}
+
+.logoPaginaLink {
+	font-size:1.3em;
+	font-weight: normal;
+	color: #fff!important;
+}
+
+.logoPaginaImg {
+	width: 146px;
+	vertical-align: middle;
+	padding-right:20px;
+}
+
+/* cabezal fondo*/
+
+.fondoCabezal {
+	/*background-image:url(agendadeactividades-04.png);*/
+	background-color: #88C7A0;
+	width:100%;
+	height:500px;
+	background-size:cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
+
+.contenidoCabezalBase {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contenidoCabezal {
+	left: 50%;
+	text-align: left;
+	position: relative;	
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 5em;
+	color: #fff;
+}
+
+.contenidoBase {
+	width:100%;
+}
+
+
+.contenido {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.buscador {
+	margin: 40px 0px;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.lupaImg {
+	height: 20px;
+	margin-right: 5px;
+}
+
+#buscador {
+	font-size: 0.8em;
+	font-style: italic;
+	margin-left: 5px;
+	margin-left: 5px;
+    border-bottom: 1px
+	solid #015294!important;
+    border-width: 0px;
+    border-style: none;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    width: 100%;
+    background: #F1F3F4;
+}
+
+
+/*colores áreas temáticas
+
+prestacional  #56B9E3
+
+herramientasInformaticas #B9D487
+
+formacionBasicaGestion #EF9A6E
+
+habilidadesSociales #F7C15F
+
+bienestarPersonal #8782B6
+
+formacionEspecializada #69C2C0;
+
+formacionInstructores #417DAF;
+*/
+
+
+.cursoAgendaBase {
+	width: 100%;
+    background: #fff;
+    margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.cursoAgendaBordePrestacional {
+	border: 1px solid #56B9E3!important;
+}
+
+.cursoAgendaBordeGestion {
+	border: 1px solid #EF9A6E!important;
+}
+
+.cursoAgendaBordeHerramientas {
+	border: 1px solid #B9D487!important;
+}
+
+.cursoAgendaBordeHabilidades {
+	border: 1px solid #F4AC2B!important;
+}
+
+.cursoAgendaBordeEspecializada {
+	border: 1px solid #69C2C0!important;
+}
+
+.cursoAgendaBordeBienestar {
+	border: 1px solid #8782B6!important;
+}
+
+
+.cursoAgendaCabezal {
+	padding: 5px;
+	box-sizing: border-box;
+	display: block;
+	overflow: hidden;
+	height: 100%;
+	background: #fff;
+	height: auto;
+	cursor: pointer;
+}
+
+.cursoAgendaCabezalPrestacional {
+	border: 1px solid #56B9E3;
+}
+
+.cursoAgendaCabezalGestion {
+	border: 1px solid #EF9A6E;
+}
+
+.cursoAgendaCabezalHerramientas {
+	border: 1px solid #B9D487;
+}
+
+.cursoAgendaCabezalHabilidades {
+	border: 1px solid #F4AC2B;
+}
+
+.cursoAgendaCabezalEspecializada {
+	border: 1px solid #69C2C0;
+}
+
+.cursoAgendaCabezalBienestar {
+	border: 1px solid #8782B6;
+}
+
+.cerrado {
+	display: none;
+}
+
+.cursoAgendaCabezalPrestacional.cerrado {
+	background: #56B9E3;
+}
+
+.cerrado .cursoNombre {
+	color: #fff!important;
+}
+
+.cerrado .cursoFlecha {
+	background-image: url('flechaBlanca.svg');
+}
+
+.cursoAgendaCabezalGestion.cerrado {
+	background: #EF9A6E;
+}
+.cursoAgendaCabezalGestion.abierto {
+	background: #fff;
+}
+
+.cursoAgendaCabezalHerramientas.cerrado {
+	background: #B9D487;
+}
+.cursoAgendaCabezalHerramientas.abierto {
+	background: #fff;
+}
+
+.cursoAgendaCabezalHabilidades.cerrado {
+	background: #F4AC2B;
+}
+.cursoAgendaCabezalHabilidades.abierto {
+	background: #fff;
+}
+
+.cursoAgendaCabezalEspecializada.cerrado {
+	background: #69C2C0;
+}
+.cursoAgendaCabezalEspecializada.abierto {
+	background: #fff;
+}
+
+.cursoAgendaCabezalBienestar.cerrado{
+	background: #8782B6;
+}
+.cursoAgendaCabezalBienestar.abierto {
+	background: #fff;
+}
+
+
+.cursoFlecha {
+	width: 30px;
+	height: 10px;
+	margin: 5px 0px 5px 15px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	float: left;
+	box-sizing: border-box;
+}
+
+
+.cursoFlechaPrestacional {
+	background-image: url('flechaPrestacional.svg');
+}
+
+.cursoFlechaGestion {
+	background-image: url('flechaGestion.svg');
+}
+
+.cursoFlechaHerramientas  {
+	background-image: url('flechaHerramientas.svg');
+}
+
+.cursoFlechaHabilidades  {
+	background-image: url('flechaHabilidades.svg');
+}
+
+.cursoFlechaEspecializada  {
+	background-image: url('flechaEspecializada.svg');
+}
+
+.cursoFlechaBienestar  {
+	background-image: url('flechaBienestar.svg');
+}
+
+
+.cursoNombre{
+	color: #015294;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 15px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.modalidad {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+.mas {
+	float: right;
+	margin-right: 50px;
+	box-sizing: border-box;
+	font-size: 1.5em;
+    line-height: 0.8em;
+    font-weight: bold;
+}
+
+.menos {
+	float: right;
+	margin-right: 50px;
+	box-sizing: border-box;
+	font-size: 1.5em;
+    line-height: 0.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.boton-mas {
+    text-align: center;
+	text-decoration: none!important;
+}
+
+.boton-menos {
+    text-align: center;
+	color: #fff!important;
+	text-decoration: none!important;
+}
+
+.boton-masPrestacional {
+	color: #56B9E3!important;
+}
+
+.boton-masGestion {
+	color: #EF9A6E!important;
+}
+
+.boton-masHerramientas {
+	color: #B9D487!important;
+}
+
+.boton-masHabilidades {
+	color: #F4AC2B!important;
+}
+
+.boton-masEspecializada {
+	color: #69C2C0!important;
+}
+
+.boton-masBienestar {
+	color: #8782B6!important;
+}
+
+
+.fechaBase {
+	margin-left: 70px;
+	box-sizing: border-box;
+	display: flex;
+    justify-content: space-between;
+    height: 0px;
+    overflow: hidden;
+	cursor: pointer;
+}
+
+.fechaBase.prestacional {
+		border: 1px solid #56B9E3;
+}
+
+.fechaColumnasBase {
+	width: 80%;
+	box-sizing: border-box;
+}
+
+.fechasColumnas {
+	width:50%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.fechaTitulo {
+	width:100%;
+	float: left;
+	text-align: left;
+	font-size: 0.9em;
+	padding: 5px;
+	color: #015294;
+}
+
+.fechas {
+	width:100%;
+	float: left;
+	text-align: left;
+	font-weight: bold;
+	font-size: 0.9em;
+	padding: 5px;
+	color: #015294;
+
+}
+
+.linkFicha {
+	float: right;
+	margin-right: 47px;
+	box-sizing: border-box;
+	text-align: right;
+	display: flex;
+	align-items: center;
+}
+
+.archivoImg {
+	height: 36px;
+/*	margin-top: 34px;*/
+}
+
+.contenido-toggle {
+	height: 0px;
+	overflow: hidden;
+	padding:0px 50px;
+}
+
+/*botón ir arriba*/
+#arriba {
+	width:40px;
+	height:40px;
+	display: none;
+	position: fixed;
+	bottom: 200px;
+	right: 10px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color:#646464;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+#arriba:hover {
+	background-color: #00AEEA;
+}
+
+
+@media  (max-width: 1200px){
+
+	.contenido {
+		padding: 0px 10px;
+	}
+}
+
+
+@media  (max-width: 974px){
+	.cabezalFijo {
+		padding: 0px 10px;
+	}
+
+	.fondoCabezal {
+		height: 300px;
+	}
+
+	.contenidoCabezal {
+		font-size: 3em;
+	}
+}
+
+
+
+@media  (max-width: 479px) {
+
+	.fondoCabezal {
+		height: 200px;
+	}
+
+	.contenidoCabezalBase {
+		width: 100%;
+	}
+
+	.contenidoCabezal {
+		font-size: 1.5em!important;
+		line-height: 1;
+	}
+}

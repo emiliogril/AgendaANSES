@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Agenda</title>
+	<link rel="stylesheet" type="text/css" href="agenda.css" />
+	<link rel="stylesheet" type="text/css" href="comun.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+</head>
+<html>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="agenda.js"></script>
+
+
+	<!--header Campus--->
+	<div id="cabezalBase">
+		<div class="cabezalFijo">
+			<div class="campusVirtualAnses">
+				<a class="logoPaginaLink" href="https://cva.anses.gob.ar/" target="_self"> <img class="logoPaginaImg" src="logo blanco 2020-01.png">Campus Virtual
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- cabezal -->
+	<!-- fondo cabezal -->
+	<div id="fondoCabezalAgenda" class="fondoCabezal">
+
+		<!-- Container cabezal -->
+		<div class="contenidoCabezalBase">
+			<div class="contenidoCabezal">
+				Agenda de<br>Actividades
+			</div>
+		</div>
+	</div>
+	<!-- FIN cabezal -->
+
+	<!-- contenido --> 
+	<div class="contenidoBase">
+		<div class="contenido">
+
+			<!-- Buscador -->
+			<div class="buscador"><img class="lupaImg" src="lupa.svg"><input id="buscador" type="text" value="" onkeyup="buscar()" placeholder="buscar por nombre (en minúsculas)" title="Escribir nombre del curso">
+			</div>
+
+			<!-- Curso PRESTACIONAL -->
+			<div class="cursoAgendaBase cursoAgendaBordePrestacional">
+				<div class="cursoAgendaCabezal cursoAgendaCabezalPrestacional">
+					<div class="cursoFlecha cursoFlechaPrestacional">
+					</div>
+					<div class="cursoNombre ">
+
+
+						Identificación de Personas-Toma de Trámites y Atención al Ciudadano -&nbsp;
+						<span class="modalidad">A distancia</span>
+					</div>
+					<div class="mas">
+						<a class="boton-mas boton-masPrestacional" href="javascript:void(0)" onclick="desplegar()">
+        					+
+        				</a>
+					</div>
+					<div class="menos">
+						<a class="boton-menos boton-menosPrestacional" href="javascript:void(0)" onclick="esconder()">
+        					-
+        				</a>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<div class="fechaColumnasBase">
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inicio de Actividad
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+						</div>
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inscripción directa
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+						</div>
+					</div>
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Curso GESTION -->
+			<div class="cursoAgendaBase cursoAgendaBordeGestion">
+				<div class="cursoAgendaCabezal cursoAgendaCabezalGestion">
+					<div class="cursoFlecha cursoFlechaGestion">
+					</div>
+					<div class="cursoNombre">
+						Administración del Tiempo -&nbsp;
+						<span class="modalidad">A distancia</span>
+					</div>
+					<div class="mas">
+						<a class="boton-mas boton-masGestion" href="javascript:void(0)" onclick="desplegar()">
+        					+
+        				</a>
+					</div>
+					<div class="menos">
+						<a class="boton-menos boton-menosGestion" href="javascript:void(0)" onclick="esconder()">
+        					-
+        				</a>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<div class="fechaColumnasBase">
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inicio de Actividad
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+						</div>
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inscripción directa
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+						</div>
+					</div>
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Curso HERRAMIENTAS -->
+			<div class="cursoAgendaBase cursoAgendaBordeHerramientas">
+				<div class="cursoAgendaCabezal cursoAgendaCabezalHerramientas">
+					<div class="cursoFlecha cursoFlechaHerramientas">
+					</div>
+					<div class="cursoNombre">
+						Access I -&nbsp;
+						<span class="modalidad">A distancia</span>
+					</div>
+					<div class="mas">
+						<a class="boton-mas boton-masHerramientas" href="javascript:void(0)" onclick="desplegar()">
+        					+
+        				</a>
+					</div>
+					<div class="menos">
+						<a class="boton-menos boton-menosHerramientas" href="javascript:void(0)" onclick="esconder()">
+        					-
+        				</a>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<div class="fechaColumnasBase">
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inicio de Actividad
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+						</div>
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inscripción directa
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+						</div>
+					</div>
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Curso HABILIDADES -->
+			<div class="cursoAgendaBase cursoAgendaBordeHabilidades">
+				<div class="cursoAgendaCabezal cursoAgendaCabezalHerramientas">
+					<div class="cursoFlecha cursoFlechaHabilidades">
+					</div>
+					<div class="cursoNombre">
+						Atención al Público. Estrategias Claves y Recomendaciones en Tiempos de COVID -&nbsp;
+						<span class="modalidad">A distancia</span>
+					</div>
+					<div class="mas">
+						<a class="boton-mas boton-masHabilidades" href="javascript:void(0)" onclick="desplegar()">
+        					+
+        				</a>
+					</div>
+					<div class="menos">
+						<a class="boton-menos boton-menosHabilidades" href="javascript:void(0)" onclick="esconder()">
+        					-
+        				</a>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<div class="fechaColumnasBase">
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inicio de Actividad
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+						</div>
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inscripción directa
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+						</div>
+					</div>
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Curso ESPECIALIZADA -->
+			<div class="cursoAgendaBase cursoAgendaBordeEspecializada">
+				<div class="cursoAgendaCabezal cursoAgendaCabezalHerramientas">
+					<div class="cursoFlecha cursoFlechaEspecializada">
+					</div>
+					<div class="cursoNombre">
+						Registro de Servicios Públicos -&nbsp;
+						<span class="modalidad">A distancia</span>
+					</div>
+					<div class="mas">
+						<a class="boton-mas boton-masEspecializada" href="javascript:void(0)" onclick="desplegar()">
+        					+
+        				</a>
+					</div>
+					<div class="menos">
+						<a class="boton-menos boton-menosEspecializada" href="javascript:void(0)" onclick="esconder()">
+        					-
+        				</a>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<div class="fechaColumnasBase">
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inicio de Actividad
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+						</div>
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inscripción directa
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+						</div>
+					</div>
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Curso BIENESTAR -->
+			<div class="cursoAgendaBase cursoAgendaBordeBienestar">
+				<div class="cursoAgendaCabezal cursoAgendaCabezalBienestar">
+					<div class="cursoFlecha cursoFlechaBienestar">
+					</div>
+					<div class="cursoNombre">
+						Celiaquía. Mitos y Verdades -&nbsp;
+						<span class="modalidad">A distancia</span>
+					</div>
+					<div class="mas">
+						<a class="boton-mas boton-masBienestar" href="javascript:void(0)" onclick="desplegar()">
+        					+
+        				</a>
+					</div>
+					<div class="menos">
+						<a class="boton-menos boton-menosBienestar" href="javascript:void(0)" onclick="esconder()">
+        					-
+        				</a>
+					</div>
+				</div>
+
+				<div class="fechaBase">
+					<div class="fechaColumnasBase">
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inicio de Actividad
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+							<div class="fechas">
+								Del 12/10 al 15/10/2021
+							</div>
+						</div>
+						<div class="fechasColumnas">
+							<div class="fechaTitulo">
+								Inscripción directa
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+							<div class="fechas">
+								Del 01/10 al 06/10/2021
+							</div>
+						</div>
+					</div>
+					<div class="linkFicha">
+						<img class="archivoImg" src="archivo.svg">
+					</div>
+				</div>
+			</div>
+			
+
+
+		</div>
+
+
+
+
+	</div>
+</div>
+
+<!-- boton volver arriba-->
+<button onclick="topFunction()" id="arriba" title="Ir arriba"><img src="arriba.png" width="20" height="18"></button>
+
+
+<!-- (lemon)pie -->
+<div class="lemonPieBase container-fluid">
+	<div class="lemonPie">
+		<div class="contactoBase columna col-sm-12 col-md-4">
+			<div class="contacto pieContenido">
+				<span class="pieTitulo">
+					Contacto
+				</span>
+				<p class="pieTexto">
+					<a class="pieTexto" href="mailto:DCAP@anses.gov.ar">
+					DCAP@anses.gov.ar</a><br>
+					Chacabuco 467/479, 9° Piso,<br>
+					Contrafrente, CPA C1069AAI, CABA.<br>
+				</p>
+			</div>
+		</div>
+		<div class="espacioBalcarceBase columna col-sm-12 col-md-4">
+			<div class="espacioBalcarce pieContenido">
+					<span class="pieTitulo">
+						Espacio Balcarce
+					</span>
+				<p class="pieTexto">
+					Balcarce 627, CABA
+				</p>
+			</div>
+		</div>
+		<div class="bibliotecaBase columna col-sm-12 col-md-4">
+			<div class="biblioteca pieContenido">
+				<span class="pieTitulo">
+					Biblioteca
+				</span>
+				<p class="pieTexto">
+					Balcarce 610, 2° piso, CABA
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

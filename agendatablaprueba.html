@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="agenda.css" />
+	<link rel="stylesheet" type="text/css" href="comun.css" />
+
+    <title>Agenda Tabla</title>
+</head>
+<body>
+
+    <!--header Campus--->
+	<div id="cabezalBase">
+		<div class="cabezalFijo">
+			<div class="campusVirtualAnses">
+				<a class="logoPaginaLink" href="https://cva.anses.gob.ar/" target="_self"> <img class="logoPaginaImg" src="logo blanco 2020-01.png">Campus Virtual
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+    <!-- fondo cabezal -->
+	<div id="fondoCabezalAgenda" class="fondoCabezal">
+
+	<!-- Container cabezal -->
+	<div class="contenidoCabezalBase">
+		<div class="contenidoCabezal">Agenda de<br>Actividades</div>
+	</div>
+	</div>
+	<!-- FIN cabezal -->
+
+    <!-- contenido --> 
+	<div class="contenidoBase">
+		<div class="contenido">
+
+	<!-- Buscador -->
+	<div class="buscador"><img class="lupaImg" src="lupa.svg"><input id="buscador" type="text" value="" onkeyup="buscar()" placeholder="buscar por nombre (en minúsculas)" title="Escribir nombre del curso">
+			</div>
+
+                    <!-- CARGAR LOS DATOS JSON -->
+					<div class="row" id="lista-usuarios"></div>
+								</div>
+							</div>
+                </div></div></div></div></div></div></div></div>
+
+
+    <!-- boton volver arriba-->
+    <button onclick="topFunction()" id="arriba" title="Ir arriba"><img src="arriba.png" width="20" height="18"></button>
+
+
+    <!-- (lemon)pie -->
+        <div class="lemonPieBase container-fluid">
+	        <div class="lemonPie">
+		        <div class="contactoBase columna col-sm-12 col-md-4">
+			        <div class="contacto pieContenido">
+				    <span class="pieTitulo">Contacto</span>
+				    <p class="pieTexto">
+					<a class="pieTexto" href="mailto:DCAP@anses.gov.ar">
+					DCAP@anses.gov.ar</a><br>
+					Chacabuco 467/479, 9° Piso,<br>
+					Contrafrente, CPA C1069AAI, CABA.<br>
+				</p>
+			</div>
+		</div>
+		<div class="espacioBalcarceBase columna col-sm-12 col-md-4">
+			<div class="espacioBalcarce pieContenido">
+					<span class="pieTitulo">
+						Espacio Balcarce
+					</span>
+				<p class="pieTexto">
+					Balcarce 627, CABA
+				</p>
+			</div>
+		</div>
+		<div class="bibliotecaBase columna col-sm-12 col-md-4">
+			<div class="biblioteca pieContenido">
+				<span class="pieTitulo">
+					Biblioteca
+				</span>
+				<p class="pieTexto">
+					Balcarce 610, 2° piso, CABA
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+    <!-- SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="agenda.js"></script>
+    <script type="text/javascript" src="tablaprueba.js"></script>
+
+</body>
+</html>
